@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <title>プロフィールページ</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<header>
     <h1>こんにちわ</h1>
-    <p>私はプログラミングが大好きです。</p>
+</header>
+
+<main>
+    <img src="profile.jpg" alt="プロフィール画像" class="profile-pic">
+
+    <p class="intro">
+        私はプログラミングが大好きです。将来は起業したいです。
+    </p>
+
+    <section class="offer">
+        <h2>制作のご案内</h2>
+        <p class="offer-text">
+            HTML / CSS / JavaScript を用いた<br>
+            シンプルで見やすいWebページ制作を行っています。<br><br>
+            個人・小規模事業者様向けに、<br>
+            プロフィールページや簡単なサイト制作の<br>
+            ご相談を受け付けています。
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>スキル</h2>
+        <ul>
+            <li>Python</li>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section class="hobbies">
+        <h2>趣味</h2>
+        <ul>
+            <li>プログラミング</li>
+            <li>読書</li>
+            <li>ゲーム</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>お問い合わせ</h2>
+        <form id="contactForm">
+            <input type="text" id="nameInput" placeholder="お名前" required>
+            <input type="email" placeholder="メールアドレス" required>
+            <textarea placeholder="お問い合わせ内容" rows="4"></textarea>
+            <button type="submit" class="contact-btn">送信</button>
+        </form>
+    </section>
+</main>
+
+<nav>
+    <a href="about.html">Aboutページへ</a>
+</nav>
+
+<footer>
+    &copy; 2025 My Profile Page
+</footer>
+
+<script>
+const form = document.getElementById("contactForm");
+const nameInput = document.getElementById("nameInput");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert(nameInput.value + " さん、お問い合わせありがとうございます！");
+});
+</script>
+
 </body>
 </html>
