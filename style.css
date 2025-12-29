@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to bottom, #f0f8ff, #d0eafc);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #2c3e50;
+}
+
+.intro {
+    font-size: 20px;
+    line-height: 1.8;
+    width: 65%;
+    margin: 25px auto;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.contact-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
