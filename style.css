@@ -1,5 +1,15 @@
+:root {
+    --main-color: #6c3483;
+    --sub-color: #ffe4e1;
+    --accent-color: #16a085;
+
+    --bg-light: #fff0f5;
+    --border-color: #2c3e50;
+    --text-color: #555;
+}
+
 body {
-    background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+    background: linear-gradient(to bottom, var(--bg-light), var(--sub-color));
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,11 +18,11 @@ body {
 header {
     text-align: center;
     padding: 40px 20px;
-    background-color: #ffe4e1;
+    background-color: var(--sub-color);
 }
 
 h1 {
-    color: #e74c3c;
+    color: var(--main-color);
     font-size: 36px;
     font-family: 'Lobster', cursive;
 }
@@ -37,7 +47,7 @@ main {
     line-height: 1.8;
     width: 70%;
     margin: 30px auto;
-    color: #e67e22;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -112,7 +122,7 @@ main {
 }
 
 .contact-btn {
-    background-color: purple;
+    background-color: var(--main-color);
     color: white;
     border: none;
     border-radius: 30px;
@@ -122,7 +132,7 @@ main {
 }
 
 .contact-btn:hover {
-    background-color: #16a085;
+    background-color: var(--accent-color);
 }
 
 nav {
@@ -131,12 +141,26 @@ nav {
 }
 
 nav a {
-    background-color: #4CAF50;
+    background-color: var(--main-color);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    .intro {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
 }
 
 footer {
@@ -145,3 +169,4 @@ footer {
     background-color: #ffe4e1;
     color: #555;
 }
+
